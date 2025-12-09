@@ -38,6 +38,46 @@ A simple command-line-based to-do list application written in Python.
    - Support for optional due dates.
    - Listing sorts tasks by due date.
 
+## How to Run
+
+Prerequisites:
+
+- Python 3.7 or newer installed.
+- (Optional) Create and activate a virtual environment:
+
+  python -m venv .venv
+  source .venv/bin/activate  # macOS / Linux
+  .\.venv\Scripts\activate   # Windows (PowerShell)
+
+Run the CLI:
+
+- From the repository root, run the main script with Python:
+
+  python main.py
+
+Common usage examples (these are typical commands; adapt flags if your implementation differs):
+
+- Add a task:
+
+  python main.py add "Buy groceries" --description "Milk, eggs, bread" --due 2025-12-31
+
+- List tasks:
+
+  python main.py list
+
+- Mark a task as completed (replace <id> with the task ID shown in list):
+
+  python main.py complete <id>
+
+- Delete a task (replace <id> with the task ID):
+
+  python main.py delete <id>
+
+Notes:
+
+- Tasks are stored in `tasks.json` in the project root. If the file doesn't exist it will be created automatically on first write.
+- If your CLI uses different subcommands or flags, adapt the example commands above to match your implementation.
+
 ## Project Structure
 
 ```text
@@ -48,3 +88,5 @@ task_tracker/
 ├── storage.py        # Functions to read/write JSON file
 ├── tasks.json        # Stores task data
 └── README.md         # Instructions & how to run
+
+```
