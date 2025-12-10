@@ -17,7 +17,7 @@ It combines:
 
 > 👉 Once you have a successful EAS build, copy the APK link from Expo and paste it below.
 
-[⬇️ Download StickerSmash APK](https://expo.dev/your-apk-download-link-here)
+[⬇️ Download StickerSmash APK]([https://expo.dev/your-apk-download-link-here](https://expo.dev/accounts/dhiraj7kr/projects/StickerSmash/builds/8e75ec14-8671-4a8e-bb86-ea06e549c421))
 
 > Replace the URL above with the APK link from your Expo build page (from `eas build`).
 
